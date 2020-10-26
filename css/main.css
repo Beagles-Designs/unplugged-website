@@ -117,10 +117,6 @@ header .content-wrapper {
   margin: 0;
 }
 
-header a img {
-  width: 60%;
-  }
-}
 
 .header-divider {
   width: 100%;
@@ -379,16 +375,210 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  /* ==================== Tablet styles here =======================*/
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  /* header tablet styles */
+
+  header {
+    padding: 0;
+    margin: 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+ 
+  .header-divider {
+  display: none;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+/* ========== Main tablet styles =========== */
+
+/* Hero section */
+
+.hero-area h1 {
+  margin-top: 50px;
 }
+
+/* Aside tablet styles */
+
+aside .content-wrapper {
+  display: flex;
+  margin: 50px 0;
+  flex-flow: row nowrap;
+}
+
+.form-description {
+  width: 50%;
+  padding-right: 70px;
+}
+
+.form-description p {
+  margin-bottom: 0;
+}
+
+.form {
+  width: 50%;
+  padding-left: 30px;
+}
+
+
+/* Features Tablet Styles */
+
+.features h2 {
+  margin: 50px 0 30px 0;
+}
+
+.features-items article {
+  width: 50%;
+} 
+
+/* Reviews Tablet Styles     --> NEEDS HELP */
+
+.reviews article {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.reviews h2 {
+  margin: 50px 0 20px 0;
+}
+
+.review-image {
+  width: 50%;
+  height: 31.25%;
+}
+
+
+/* Footer Tablet Styles */
+
+footer .content-wrapper {
+  width: 80%;
+}
+
+.footer-content {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.contact, .social {
+  width: 50%;
+  text-align: center;
+}
+
+.contact h4, 
+.social h4 {
+  margin-top: 0;
+}
+
+footer .contact {
+  margin: 0;
+}
+
+/* ==========================================================================
+   About Page Tablet Styles
+   ========================================================================== */
+.mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .mission-content p {
+        width: 45%;
+        padding-top: 20px;
+    }
+ 
+    .contact-content {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+}
+
+/* ==========================================================================
+   FAQ Page Tablet Styles
+   ========================================================================== */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq h2 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+  /* ===============Desktop styles here==================== */
+@media only screen and (min-width: 1200px) {
+
+/* Header desktop styles */
+
+header .content-wrapper {
+  margin: 20px 0;
+  justify-content: flex-start;
+}
+
+.header-divider {
+  margin-right: 200px;
+}
+
+header nav {
+  width: 16%;
+}
+
+/* Main Area Desktop Styles */
+
+.hero-area h1 {
+  margin-top: 0;
+}
+
+/* Aside desktop styles */
+
+aside .content-wrapper {
+  justify-content: center;
+}
+
+.form-description,
+.form {
+  width: 33%;
+}
+
+/* Featuers desktop styles */
+
+.features-items article {
+  width: 33.3%;
+} 
+
+
+/* reviews Desktop Styles */
+
+.reviews h2 {
+  margin: 50px 0 90px 0;
+}
+
 
 /* ==========================================================================
    Print styles.
