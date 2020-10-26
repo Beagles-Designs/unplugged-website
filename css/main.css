@@ -204,7 +204,11 @@ aside {
 .form input {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 18px;
+  margin-top: 16px;
+}
+
+.form-description p {
+  margin-top: 16px;
 }
 
 /* Features */
@@ -245,6 +249,7 @@ aside {
 }
 
 .reviews h2 {
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -441,30 +446,45 @@ aside .content-wrapper {
 
 /* Features Tablet Styles */
 
+
 .features h2 {
   margin: 50px 0 30px 0;
+  width: 100%;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features-items article {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
 } 
+
+.features .item-description {
+  width: 50%;
+}
 
 /* Reviews Tablet Styles     --> NEEDS HELP */
 
-.reviews article {
-  display: inline-block;
-  margin-bottom: 50px;
-}
-
 .reviews h2 {
-  margin: 50px 0 20px 0;
+  margin: 50px 0 100px 0;
 }
 
-.review-image {
-  width: 50%;
-  height: 31.25%;
+.reviews article {
+  display: flex;
+  justify-content: space-between;
 }
 
+.reviews article div {
+  width: 49%;
+}
 
 /* Footer Tablet Styles */
 
@@ -498,20 +518,20 @@ footer .contact {
    About Page Tablet Styles
    ========================================================================== */
 .mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
- 
-    .mission-content p {
-        width: 45%;
-        padding-top: 20px;
-    }
- 
-    .contact-content {
-        display: flex;
-        justify-content: space-between; 
-        align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .mission-content p {
+      width: 45%;
+      padding-top: 20px;
+  }
+
+  .contact-content {
+      display: flex;
+      justify-content: space-between; 
+      align-items: flex-start;
 }
 
 /* ==========================================================================
@@ -531,14 +551,21 @@ footer .contact {
   flex-basis: 45%;
 }
 
-  /* ===============Desktop styles here==================== */
+
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
 @media only screen and (min-width: 1200px) {
+
+.content-wrapper {
+  max-width: 960px;
+}
 
 /* Header desktop styles */
 
 header .content-wrapper {
   margin: 20px 0;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .header-divider {
@@ -563,13 +590,16 @@ aside .content-wrapper {
 
 .form-description,
 .form {
-  width: 33%;
+  width: 33%;  
+  margin: 0 80px;
+  padding: 0;
 }
 
 /* Featuers desktop styles */
 
 .features-items article {
-  width: 33.3%;
+  flex-basis: 33.3%;
+
 } 
 
 
@@ -577,6 +607,17 @@ aside .content-wrapper {
 
 .reviews h2 {
   margin: 50px 0 90px 0;
+}
+
+
+/*  Contact Footer Desktop Styles */
+
+.footer-content {
+  justify-content: space-between;
+}
+
+.contact, .social {
+  width: 33.3%;
 }
 
 
