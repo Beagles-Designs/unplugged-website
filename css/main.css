@@ -121,6 +121,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 
 }
 
@@ -128,11 +129,13 @@ h3,
 h4 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.125em;
+ font-weight: 500;
+ margin: 20px 0;
 
 }
  
 p {
-  line-height: 1.125em;
+  line-height: 1.285em;
   font-size: .875em;
 }
  
@@ -158,6 +161,32 @@ address {
   margin: 50px 0;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+  margin-top: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ------- Base Header - Footer Styles ------------------------ */
 
@@ -171,7 +200,8 @@ footer {
 
 
 header {
-  padding: 15px 0;
+  padding: 1em 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -182,11 +212,20 @@ header .content-wrapper {
   margin: 0;
 }
 
+header img {
+  width: 60%;
+}
 
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 20px 0 20px 0;
+  background-color: #3a3a3a;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
 }
 
 header nav {
@@ -194,17 +233,21 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 50%;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
   flex-direction: column;
+  background-color: #202322;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -245,8 +288,11 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
 }
 
 /* Aside */
@@ -256,6 +302,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .form-description h3, .form h3 {
@@ -263,18 +310,10 @@ aside {
 }
 
 .form-description p {
-  margin-bottom: 36px;
+  margin-bottom: 2.25em;
+  margin-top: 1em;
 }
 
-.form input {
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: 16px;
-}
-
-.form-description p {
-  margin-top: 16px;
-}
 
 /* Features */
 
@@ -284,9 +323,6 @@ aside {
   flex-flow: row wrap;
 }
 
-.features h2 {
-  margin-bottom: 60px;
-}
 
 .features article {
   width: 63%;
@@ -295,6 +331,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features .features-items {
@@ -311,17 +348,9 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
-.reviews h2 {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.reviews h3 {
-  width: 80%;
-  margin: 25px 0;
-}
 
 /* ------- Mobile Styles - About Page ------------------------ */
 
