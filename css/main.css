@@ -140,7 +140,7 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
@@ -289,9 +289,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  background-position: center;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 500px;
 }
 
