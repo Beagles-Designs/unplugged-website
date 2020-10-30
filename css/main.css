@@ -343,9 +343,9 @@ aside {
   flex-flow: row wrap;
 }
 
-.features figure {
+.features i {
   margin-bottom: 40px;
-  width: 40%;
+  font-size: 3.75em;
 }
 
 .features p {
