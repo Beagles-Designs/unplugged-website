@@ -110,12 +110,13 @@ a {
   text-decoration: none;
   font-style: normal;
   color: #e2e3ed;
-
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 h2 {
@@ -265,15 +266,13 @@ footer .social-icons {
   align-content: center;
 }
 
-footer .social-icons figure {
+footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
-  padding: 15px 15px;
-}
-
-footer .social-icons p {
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -519,6 +518,25 @@ aside {
   max-width: 640px;
 }
 
+ul,
+ol {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.5em;
+}
+
+
 /* header tablet styles */
 
 header {
@@ -555,11 +573,11 @@ header nav ul {
 /* ========== Main tablet styles =========== */
 
 
-h2 {
-  font-size: 2.25em;
-}
-
 /* Hero section */
+
+.hero-area {
+  min-height: 600px;
+}
 
 .hero-area h1 {
   margin-top: 50px;
@@ -582,11 +600,32 @@ aside .content-wrapper {
   margin-bottom: 0;
 }
 
-.form {
+aside .form {
   width: 50%;
   padding-left: 30px;
+  margin-top: 0;
 }
 
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+  margin-top: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* Features Tablet Styles */
 
@@ -596,29 +635,26 @@ aside .content-wrapper {
   width: 100%;
 }
 
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 .features-items article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column wrap;
   flex-basis: 50%;
 } 
 
 .features .item-description {
-  width: 50%;
+  width: 62%;
 }
 
-/* Reviews Tablet Styles     --> NEEDS HELP */
+.features i {
+  font-size: 4.5em;
+  margin-bottom: 25px;
+}
+
+/* Reviews Tablet Styles   */
+
 
 .reviews h2 {
-  margin: 50px 0 100px 0;
+  margin: 50px 0 20px 0;
 }
 
 .reviews article {
@@ -627,7 +663,26 @@ aside .content-wrapper {
 }
 
 .reviews article div {
-  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reviews figure {
+  width: 50%;
+  padding-right:  20px;
+}
+
+.reviews .written-reviews {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.written-reviews h3 {
+  margin: 0;
 }
 
 /* Footer Tablet Styles */
@@ -658,6 +713,12 @@ footer .contact {
   margin: 0;
 }
 
+
+footer .social-icons {
+  padding: 0 40px;
+}
+
+
 /* ==========================================================================
    About Page Tablet Styles
    ========================================================================== */
@@ -687,7 +748,6 @@ footer .contact {
 }
 
 .contact-section h4 {
-  font-size: 1.5em;
   margin: 30px 0 20px 0;
 }
 
@@ -715,6 +775,7 @@ footer .contact {
 
 .faq h4 {
   font-size: .875em;
+  line-height: 1.125em;
 }
 
 .faq-content {
@@ -729,6 +790,24 @@ footer .contact {
 
 .content-wrapper {
   max-width: 960px;
+}
+
+ul,
+ol {
+  font-size: 1.125em;
+}
+
+h1 {
+  font-size: 3.75em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
 }
 
 /* Header desktop styles */
@@ -748,14 +827,20 @@ header nav {
 
 /* Main Area Desktop Styles */
 
+
 .hero-area h1 {
   margin-top: 0;
+  width: 80%;
 }
 
 /* Aside desktop styles */
 
 aside .content-wrapper {
   justify-content: center;
+}
+
+aside .form {
+  padding-left: 0;
 }
 
 .form-description,
@@ -772,6 +857,13 @@ aside .content-wrapper {
 
 } 
 
+.features .item-description {
+  width: 63%;
+}
+
+.features-items i {
+  font-size: 4em;
+}
 
 /* reviews Desktop Styles */
 
@@ -790,17 +882,6 @@ aside .content-wrapper {
   width: 33.3%;
 }
 
-footer h4 {
-  font-size: 1.875em;
-}
-
-footer address {
-  font-size: 1.125em;
-}
-
-.copyright p {
-  font-size: 1.125em;
-}
 
 /* ==========================================================================
    About and FAQ  Page Desktop Styles
@@ -813,20 +894,18 @@ footer address {
   margin-bottom: 0;
 }
 
-.faq p,
-.faq h4,
-.mission p,
-.contact-content p {
+.faq h4 {
   font-size: 1.125em;
+}
+
+.faq p {
+  line-height: 1.125em;
 }
 
 .contact-content {
   width: 85%;
 }
 
-.contact-content h4 {
-  font-size: 1.875em;
-}
 
 .map figure {
   padding-bottom: 37.5%;
