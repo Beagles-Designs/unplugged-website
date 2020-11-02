@@ -94,9 +94,9 @@ html {
 }
 
 body {
+ color: #e2e3ed;
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
- color: #e2e3ed;
 }
 
 ul,
@@ -107,9 +107,9 @@ ol {
 }
 
 a {
-  text-decoration: none;
-  font-style: normal;
   color: #e2e3ed;
+  font-style: normal;
+  text-decoration: none;
 }
 
 h1 {
@@ -117,6 +117,7 @@ h1 {
   font-size: 2.25em;
   font-weight: 500;
   line-height: 1.2;
+  margin: -.53em 0;
 }
 
 h2 {
@@ -137,12 +138,12 @@ h4 {
 }
  
 p {
-  line-height: 1.285em;
   font-size: .875em;
+  line-height: 1.285em;
 }
  
 img {
- width: 100%;
+  width: 100%;
 }
  
 figure {
@@ -150,17 +151,17 @@ figure {
 }
  
 address {
+ color: #e2e3ed;
  font-family: 'Open Sans', sans-serif;
  font-size: .875em;
  font-style: normal;
- text-align: center;
- color: #e2e3ed;
+ text-align: center; 
 }
 
 
 .content-wrapper {
-  width: 90%;
   margin: 50px 0;
+  width: 90%;
 }
 
 aside .form {
@@ -169,48 +170,48 @@ aside .form {
  
 input[type=text] {
   box-sizing: border-box;
-  width: 100%;
   color: #9d9ea4;
   font-style: italic;
-  padding: 1em;
   margin-top: 1em;
+  padding: 1em;
+  width: 100%;
 }
  
 input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
   border: none;
+  color: #e2e3ed;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* ------- Base Header - Footer Styles ------------------------ */
 
 header,
 footer {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 
 header {
-  padding: 1em 0;
   background-color: #202322;
+  padding: 1em 0; 
 }
 
 header .content-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin: 0;
 }
 
@@ -219,10 +220,10 @@ header img {
 }
 
 .header-divider {
-  width: 100%;
+  background-color: #3a3a3a;
   height: 1px;
   margin: 0;
-  background-color: #3a3a3a;
+  width: 100%;
 }
 
 header a {
@@ -230,26 +231,26 @@ header a {
   justify-content: center;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-around;
+header nav { 
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
-  width: 50%;
+  justify-content: space-around;
   margin-top: 15px;
+  width: 50%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 footer {
-  flex-direction: column;
   background-color: #202322;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -264,19 +265,19 @@ footer .contact {
 }
 
 footer .social-icons {
+  align-content: center;
   display: flex;
   justify-content: space-around;
-  align-content: center;
 }
 
 footer .social-icons p {
+  align-items: center;
   background-color: #527158;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
+  height: 40px;
   justify-content: center;
-  align-items: center;
+  width: 40px;
 }
 
 footer p {
@@ -293,24 +294,24 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background-image: url("../img/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   min-height: 500px;
 }
 
 /* Aside */
 
 aside {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 aside .content-wrapper {
@@ -330,28 +331,28 @@ aside .content-wrapper {
 /* Features */
 
 .features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background-image: url(../img/campfires.jpg);
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 
 .features article {
-  width: 63%;
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 30px 0;
+  width: 63%;
 }
 
 .features i {
-  margin-bottom: 40px;
   font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -360,20 +361,20 @@ aside .content-wrapper {
 }
 
 .features .features-items {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 
 /* Reviews */
 
 .reviews {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background-color: #2a423a;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .reviews article {
@@ -383,37 +384,37 @@ aside .content-wrapper {
 /* ------- Mobile Styles - About Page ------------------------ */
 
 .mission {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 
 
 .map figure {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 125%;
   position: relative;
   width: 100%
-  height: 0;
-  padding-bottom: 125%;
-  overflow: hidden;
 }
 
 .map iframe {
-  width: 100%;
   height: 100%;
+  left:0;
   position: absolute;
   top:0;
-  left:0;
+  width: 100%;
 }
 
 .contact-section {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   background-color: #2a423a;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .contact-section .contact-content {
   margin-top: 15px;
@@ -427,18 +428,18 @@ aside .content-wrapper {
 /* ------- Mobile Styles - FAQ Page ------------------------ */
 
 .faq {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .faq .content-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .faq .faq-content {
@@ -569,14 +570,14 @@ header {
 }
 
 header .content-wrapper {
-  width: 100%;
   justify-content: space-between;
   margin: 30px 0;
+  width: 100%;
 }
 
 header figure {
-  width: 45%;
   margin: 0;
+  width: 45%;
 }
 
 header figure a {
@@ -588,8 +589,8 @@ display: none;
 }
 
 header nav {
-  width: 20%;
   margin: 0;
+  width: 20%;
 }
 
 header nav ul {
@@ -613,13 +614,13 @@ header nav ul {
 
 aside .content-wrapper {
   display: flex;
-  margin: 50px 0;
   flex-flow: row nowrap;
+  margin: 50px 0;
 }
 
 .form-description {
-  width: 50%;
   padding-right: 70px;
+  width: 50%;
 }
 
 .form-description p {
@@ -627,30 +628,30 @@ aside .content-wrapper {
 }
 
 aside .form {
-  width: 50%;
-  padding-left: 30px;
   margin-top: 0;
+  padding-left: 30px;
+  width: 50%;
 }
 
 
 input[type=text] {
   box-sizing: border-box;
-  width: 100%;
   color: #9d9ea4;
   font-style: italic;
-  padding: 1em;
   margin-top: 1em;
+  padding: 1em;
+  width: 100%;
 }
  
 input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  font-size: 1.125em;
-  color: #e2e3ed;
   border: none;
+  color: #e2e3ed;
+  font-size: 1.125em;
+  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* Features Tablet Styles */
@@ -663,8 +664,8 @@ input[type=button] {
 
 
 .features-items article {
-  flex-flow: column wrap;
   flex-basis: 50%;
+  flex-flow: column wrap;
 } 
 
 .features .item-description {
@@ -689,20 +690,20 @@ input[type=button] {
 }
 
 .reviews article div {
+  align-items: flex-start;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .reviews figure {
-  width: 50%;
   padding-right:  20px;
+  width: 50%;
 }
 
 .reviews .written-reviews {
+  align-items: flex-start;
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
   width: 50%;
 }
 
@@ -717,16 +718,16 @@ footer .content-wrapper {
 }
 
 .footer-content {
-  width: 100%;
-  margin: 50px 0;
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0;
+  width: 100%;
 }
 
 .contact, .social {
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 .contact h4, 
@@ -748,9 +749,9 @@ footer .social-icons {
    About Page Tablet Styles
    ========================================================================== */
 .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   }
 
 .mission h2,
@@ -764,18 +765,18 @@ footer .social-icons {
 }
 
 .mission-content p {
-    width: 45%;
-    padding-top: 20px;
-    margin: 0 0 50px 0;
+  margin: 0 0 50px 0;
+  padding-top: 20px;
+  width: 45%;
 }
 
 .contact-section .contact-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 50px;
-    margin-top: 0;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 50px;
+  margin-top: 0;
+  text-align: left;
 }
 
 .contact-section h2 {
@@ -804,9 +805,9 @@ footer .social-icons {
 }
 
 .faq h2 {
+  margin-bottom: 30px;
   margin-top: 50px;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .faq h4 {
@@ -853,8 +854,8 @@ p {
 /* Header desktop styles */
 
 header .content-wrapper {
-  margin: 20px 0;
   justify-content: space-between;
+  margin: 20px 0;
 }
 
 .header-divider {
@@ -885,9 +886,9 @@ aside .form {
 
 .form-description,
 .form {
-  width: 33%;  
   margin: 0 80px;
   padding: 0;
+  width: 33%;  
 }
 
 /* Features desktop styles */
@@ -933,8 +934,8 @@ aside .form {
 .contact-section h2,
 .faq h2 {
   font-size: 3em;
-  width: 100%;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .faq .faq-content {
