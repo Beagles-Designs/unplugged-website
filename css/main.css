@@ -123,6 +123,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 
 }
 
@@ -131,7 +132,7 @@ h4 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.125em;
  font-weight: 500;
- margin: 20px 0;
+ margin: 0 0 20px 0;
 
 }
  
@@ -145,7 +146,7 @@ img {
 }
  
 figure {
-  margin: 0;
+  margin: 0 0 10px 0;
 }
  
 address {
@@ -220,7 +221,7 @@ header img {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 20px 0 20px 0;
+  margin: 0;
   background-color: #3a3a3a;
 }
 
@@ -235,6 +236,7 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 50%;
+  margin-top: 15px;
 }
 
 header nav ul {
@@ -253,8 +255,9 @@ footer {
 
 footer .content-wrapper {
   width: 55.5%;
-  margin: 50px 0;
 }
+
+
 
 footer .contact {
   margin-bottom: 50px;
@@ -308,6 +311,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
+
+aside .content-wrapper {
+  margin-top: 25px;
 }
 
 .form-description h3, .form h3 {
@@ -369,6 +376,9 @@ aside {
   background-color: #2a423a;
 }
 
+.reviews article {
+  margin-top: 20px;
+}
 
 /* ------- Mobile Styles - About Page ------------------------ */
 
@@ -380,13 +390,7 @@ aside {
   background-color: #527158;
 }
 
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #2a423a;
-}
+
 
 .map figure {
   position: relative;
@@ -404,6 +408,22 @@ aside {
   left:0;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+.contact-section .contact-content {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.contact-content p {
+  margin: 15px 0;
+}
+
 /* ------- Mobile Styles - FAQ Page ------------------------ */
 
 .faq {
@@ -419,6 +439,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq .faq-content {
+  margin-top: 50px;
 }
 
 
@@ -552,6 +576,7 @@ header .content-wrapper {
 
 header figure {
   width: 45%;
+  margin: 0;
 }
 
 header figure a {
@@ -564,6 +589,7 @@ display: none;
 
 header nav {
   width: 20%;
+  margin: 0;
 }
 
 header nav ul {
@@ -631,7 +657,7 @@ input[type=button] {
 
 
 .features h2 {
-  margin: 50px 0 30px 0;
+  margin: 50px 0 0 0;
   width: 100%;
 }
 
@@ -678,7 +704,6 @@ input[type=button] {
   flex-flow: column;
   align-items: flex-start;
   width: 50%;
-  padding-left: 20px;
 }
 
 .written-reviews h3 {
@@ -731,6 +756,11 @@ footer .social-icons {
 .mission h2,
 .contact-section h2 {
   margin: 50px 0 20px 0;
+
+}
+
+.mission h2 {
+  width: 96%;
 }
 
 .mission-content p {
@@ -739,12 +769,17 @@ footer .social-icons {
     margin: 0 0 50px 0;
 }
 
-.contact-content {
+.contact-section .contact-content {
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
     text-align: left;
     margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.contact-section h2 {
+  width: 94%;
 }
 
 .contact-section h4 {
@@ -771,6 +806,7 @@ footer .social-icons {
 .faq h2 {
   margin-top: 50px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .faq h4 {
@@ -778,10 +814,14 @@ footer .social-icons {
   line-height: 1.125em;
 }
 
-.faq-content {
+.faq .faq-content {
   flex-basis: 45%;
+  margin-top: 0;
 }
 
+.faq .faq-content p {
+  margin-bottom: 30px;
+}
 
 /* ==========================================================================
    Desktop Styles
@@ -850,7 +890,7 @@ aside .form {
   padding: 0;
 }
 
-/* Featuers desktop styles */
+/* Features desktop styles */
 
 .features-items article {
   flex-basis: 33.3%;
@@ -871,6 +911,9 @@ aside .form {
   margin: 50px 0 90px 0;
 }
 
+.reviews article figure {
+  padding-right: 40px;
+}
 
 /*  Contact Footer Desktop Styles */
 
@@ -894,12 +937,20 @@ aside .form {
   margin-bottom: 0;
 }
 
+.faq .faq-content {
+  margin-top: 30px;
+}
+
 .faq h4 {
   font-size: 1.125em;
 }
 
 .faq p {
   line-height: 1.125em;
+}
+
+.mission h2 {
+  width: 98%;
 }
 
 .contact-content {
